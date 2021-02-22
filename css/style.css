@@ -59,7 +59,7 @@ html {
     color: #ff4e5b;
 }
 .navbar.sticky .menu li a:hover {
-    color: #5d504a;
+    color: #222;
 }
 
 /*MENU CSS*/
@@ -143,12 +143,12 @@ html {
 section {
     padding: 100px 0;
 }
-.about, .services, .skills, .teams, .contact, footer {
+.about, .languages, .skills, .proyects, .contact, footer {
     font-family: 'Poppins', sans-serif;
     color: #222;
 }
 .about .about-content,
-.services .serv-content, 
+.languages .lang-content, 
 .skills .skills-content,
 .contact .contact-content{
     display: flex;
@@ -229,41 +229,26 @@ section .title::after {
 
 /*LENGUAJES CSS*/
 
-.services, .teams{
+.languages, .proyects{
     color: #fff;
     background: #5d504a;
 }
-.services .title::before,
-.teams .title::before {
+.languages .title::before,
+.proyects .title::before {
     background: #fff;
 }
-.services .serv-content .card {
+.languages .lang-content .card {
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
     border-radius: 6px;
     padding: 20px 25px;
-    cursor: pointer;
     transition: all 0.3s ease;
 }
-.services .serv-content .card .box {
-    transition: all 0.3s ease;
+.languages .lang-content .card i {
+    font-size: 60px;
 }
-.services .serv-content .card:hover {
-    background: #ff4e5b;
-}
-.services .serv-content .card:hover .box {
-    transform: scale(1.05);
-}
-.services .serv-content .card i {
-    font-size: 50px;
-    color: #ff4e5b;
-    transition: color 0.3s ease;
-}
-.services .serv-content .card:hover i{
-    color: #fff;
-}
-.services .serv-content .card .text {
+.languages .lang-content .card .text {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -309,24 +294,24 @@ section .title::after {
     top: 0;
     background: #ff4e5b;
 }
-.skills-content .left .html::before {
-    width: 90%;
+.skills-content .left .bootstrap::before {
+    width: 100%;
 }
-.skills-content .left .css::before {
-    width: 90%;
+.skills-content .left .grid-flexbox::before {
+    width: 100%;
 }
-.skills-content .left .js::before {
-    width: 40%;
+.skills-content .left .react::before {
+    width: 100%;
 }
-.skills-content .left .php::before {
-    width: 60%;
+.skills-content .left .nodejs::before {
+    width: 100%;
 }
-.skills-content .left .mysql::before {
-    width: 60%;
+.skills-content .left .express::before {
+    width: 100%;
 }
 
 /*PROYECTOS RECIENTES CSS*/
-.teams .carousel .card {
+.proyects .carousel .card {
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
@@ -334,25 +319,25 @@ section .title::after {
     overflow: hidden;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover {
+.proyects .carousel .card:hover {
     background: #ff4e5b;
 }
-.teams .carousel .card .box {
+.proyects .carousel .card .box {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover .box{
+.proyects .carousel .card:hover .box{
     transform: scale(1.05);
 }
-.teams .carousel .card .text {
+.proyects .carousel .card .text {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.teams .carousel .card img {
+.proyects .carousel .card img {
     height: 150px;
     width: 150px;
     object-fit: cover;
@@ -360,10 +345,10 @@ section .title::after {
     border: 5px solid #ff4e5b;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover img{
+.proyects .carousel .card:hover img{
     border-color: #fff;
 }
-.teams .carousel .card .box a {
+.proyects .carousel .card .box a {
     display: inline-block;
     background: none;
     color: #fff;
@@ -375,7 +360,7 @@ section .title::after {
     border: 2px solid #fff;
     transition: all 0.3s ease;
 }
-.teams .carousel .card .box a:hover {
+.proyects .carousel .card .box a:hover {
     color: #222;
     background: #fff;
 }
@@ -582,7 +567,7 @@ footer span a:hover {
     .about .about-content .right {
         flex: 100%;
     }
-    .services .serv-content .card {
+    .languages .lang-content .card {
       width: calc(50% - 10px);
       margin-bottom: 20px;  
     }
@@ -605,7 +590,7 @@ footer span a:hover {
     .home .home-content a {
         font-size: 20px;
     }
-    .services .serv-content .card {
+    .languages .lang-content .card {
         width: 100%;
       }
 }
