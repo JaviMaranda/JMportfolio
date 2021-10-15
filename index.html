@@ -61,7 +61,7 @@
                         Estoy en busqueda de mi primer empleo en el rubro IT, para el puesto de Frontend Jr.
                         Tengo 26 años, cuento con disponibilidad horaria full-time, para trabajo remoto, 
                         o presencial en Buenos Aires. </p>
-                    <a href="/JavierMarandaCV.pdf" target="_blank">Descargar CV</a>
+                    <a href="JavierMarandaCV.pdf" target="_blank">Descargar CV</a>
                 </div>
             </div> 
         </div>
@@ -233,7 +233,7 @@
                 </div>
                 <div class="column right">
                     <div class="text">Envíame un mensaje</div>
-                    <form action="/enviar.php" method="POST">
+                    <form action="enviar.php" method="POST">
                         <div class="fields">
                             <div class="field name">
                                 <input type="text" name="name" placeholder="Nombre" required>
@@ -252,6 +252,9 @@
                             <button type="submit">Enviar mensaje</button>
                         </div>
                     </form>
+                    <?php
+                    include("enviar.php");
+                    ?>
                 </div>
             </div>
         </div>
